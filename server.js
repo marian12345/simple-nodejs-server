@@ -11,17 +11,24 @@ var server = http.createServer(function (req, res) {   //create web server
         res.end();
     
     }
-    else if (req.url == "/message/post") {
+    else if (req.url == "/groceries") {
         
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is the url to post messages</p></body></html>');
+        res.write('<html><body><p>This is the url groceries</p></body></html>');
         res.end();
     
     }
-    else if (req.url == "/message/fetchAll") {
+    else if (req.url == "/palmtree") {
         
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is the url to fetch all messages</p></body></html>');
+        res.write('<html><body><p>This is the url for palmtrees</p></body></html>');
+        res.end();
+    
+    }
+    else if (req.url == "/random") {
+        
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write('<html><body><p>This is a random url</p></body></html>');
         res.end();
     
     }
